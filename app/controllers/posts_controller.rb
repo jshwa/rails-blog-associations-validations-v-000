@@ -12,7 +12,7 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.new(post_params)
-    raise params.inspect
+    binding.pry
     @post.tags << post_params[:tags]
     respond_to do |format|
       if @post.save
