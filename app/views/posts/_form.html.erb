@@ -16,7 +16,7 @@
     <%= f.text_field :name %><br>
     <%= f.label :content %><br>
     <%= f.text_field :content %><br>
-    <%= collection_check_boxes(:post, :tag_ids, Tag.all, :id, :name) do |b|%>
+    <%= f.collection_check_boxes( :tag_ids, Tag.all, :id, :name) do |b|%>
         <%= b.check_box %>
         <%= b.label %> <br>
     <% end %>
