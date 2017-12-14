@@ -11,6 +11,7 @@ class PostsController < ApplicationController
   end
 
   def create
+    raise params.inspect
     @post = Post.new(post_params)
 
     respond_to do |format|
