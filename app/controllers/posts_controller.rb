@@ -10,7 +10,8 @@ class PostsController < ApplicationController
     @tags = Tag.all
   end
 
-  def create
+  def create 
+    raise post_params.inspect
     @post = Post.new(post_params)
 
     respond_to do |format|
