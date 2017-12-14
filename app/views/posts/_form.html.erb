@@ -16,7 +16,9 @@
     <%= f.text_field :name %><br>
     <%= f.label :content %><br>
     <%= f.text_field :content %><br>
-    
+    <% @tags.each do |t|%>
+    <%=  t.check_box :t.name%>
+    <% end %>
   </div>
 
   <div class="actions">
