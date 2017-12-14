@@ -1,4 +1,4 @@
-class CreatePostTags < ActiveRecord::Migration
+class CreatePostsTag < ActiveRecord::Migration
   def change
     create_table :posts_tag do |t|
       t.integer :tag_id
